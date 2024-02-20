@@ -1,0 +1,46 @@
+.movies-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width:100%;
+}
+
+.movie {
+    width: 20vw;
+    max-width: 100%;
+    overflow: hidden;
+    height: 62vh;
+    border: 1px black solid;
+    background-color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    font-size:1.4rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.overview {
+    bottom: -50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: bottom 0.3s ease;
+}
+
+.movie:hover .overview {
+    bottom: 0;
+}
